@@ -6,8 +6,8 @@
 const profilesData = [
     {
         id: 1,
-        profileImage: 'https://media.licdn.com/dms/image/v2/D4D03AQFz-brE0b6yDw/profile-displayphoto-shrink_200_200/B4DZQT0jBfHUAY-/0/1735499331131?e=2147483647&v=beta&t=EKrtRkO3fhFJnFevefbwkVfukqnN0QJ1UpEg2ikApw0',
-        fullName: 'Jignesh Makwana - Test',
+        profileImage: 'https://in.bmscdn.com/iedb/artist/images/website/poster/large/dilip-joshi-6232-1662042006.jpg',
+        fullName: 'TEST ERROR!',
         gender: 'Male',
         dateOfBirth: '1997-08-07',
         age: 32,
