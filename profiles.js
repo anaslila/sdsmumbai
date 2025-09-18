@@ -6,11 +6,11 @@
 const profilesData = [
     {
         id: 1,
-        profileImage: 'https://in.bmscdn.com/iedb/artist/images/website/poster/large/dilip-joshi-6232-1662042006.jpg',
-        fullName: 'TEST ERROR!',
-        gender: 'Male',
-        dateOfBirth: '1997-08-07',
-        age: 32,
+        profileImage: '',
+        fullName: '',
+        gender: '',
+        dateOfBirth: '',
+        age: '32',
         height: '5\'4"',
         weight: '54 kg',
         maritalStatus: 'Married',
