@@ -1,1 +1,251 @@
-<img src="https://i.postimg.cc/KYNG6h2w/image.png" alt="SDS Logo" class="logo">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorthiya Damji Samaj - Matrimonial</title>
+    <link rel="icon" href="https://i.postimg.cc/KYNG6h2w/image.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://i.postimg.cc/KYNG6h2w/image.png" alt="SDS Logo" class="logo">
+                <h1>Sorthiya Damji Samaj</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#profiles" class="nav-link"><i class="fas fa-users"></i> Profiles</a>
+                <a href="#add-profile" class="nav-link"><i class="fas fa-plus-circle"></i> Add Profile</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#profiles" class="mobile-nav-link"><i class="fas fa-users"></i> Profiles</a>
+        <a href="#add-profile" class="mobile-nav-link"><i class="fas fa-plus-circle"></i> Add Profile</a>
+        <a href="#contact" class="mobile-nav-link"><i class="fas fa-phone"></i> Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Find Your Perfect Match</h2>
+                    <p class="hero-subtitle">
+                        <i class="fas fa-heart"></i>
+                        Connecting hearts within our Sorthiya Damji Samaj community
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number" id="totalProfiles">0</span>
+                            <span class="stat-label">Profiles</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-handshake"></i>
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Success Stories</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Verified</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://tinyurl.com/SDS-MatrimonialForm" target="_blank" class="btn-primary">
+                            <i class="fas fa-user-plus"></i>
+                            Add Your Profile
+                        </a>
+                        <button onclick="scrollToProfiles()" class="btn-secondary">
+                            <i class="fas fa-search"></i>
+                            Browse Profiles
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <i class="fas fa-rings-wedding"></i>
+                        <h3>Perfect Matches</h3>
+                        <p>Based on preferences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-card">
+                <h3><i class="fas fa-filter"></i> Find Your Match</h3>
+                <div class="search-grid">
+                    <div class="search-item">
+                        <label><i class="fas fa-venus-mars"></i> Gender</label>
+                        <select id="genderFilter" onchange="filterProfiles()">
+                            <option value="">All</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label><i class="fas fa-birthday-cake"></i> Age Range</label>
+                        <select id="ageFilter" onchange="filterProfiles()">
+                            <option value="">All Ages</option>
+                            <option value="18-25">18-25</option>
+                            <option value="26-30">26-30</option>
+                            <option value="31-35">31-35</option>
+                            <option value="36-40">36-40</option>
+                            <option value="40+">40+</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label><i class="fas fa-map-marker-alt"></i> Location</label>
+                        <input type="text" id="locationFilter" placeholder="Enter city" onkeyup="filterProfiles()">
+                    </div>
+                    <div class="search-item">
+                        <label><i class="fas fa-graduation-cap"></i> Education</label>
+                        <select id="educationFilter" onchange="filterProfiles()">
+                            <option value="">All Education</option>
+                            <option value="Graduate">Graduate</option>
+                            <option value="Post Graduate">Post Graduate</option>
+                            <option value="Professional">Professional</option>
+                            <option value="Doctorate">Doctorate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-actions">
+                    <button onclick="filterProfiles()" class="btn-search">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                    <button onclick="clearFilters()" class="btn-clear">
+                        <i class="fas fa-times"></i> Clear
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section id="profiles" class="profiles-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-users"></i> Browse Profiles</h2>
+                <div class="sort-options">
+                    <label>Sort by:</label>
+                    <select id="sortBy" onchange="sortProfiles()">
+                        <option value="newest">Newest First</option>
+                        <option value="age">Age</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
+            <div class="profiles-grid" id="profilesGrid">
+                <!-- Profiles will be loaded here -->
+            </div>
+            <div class="load-more-container">
+                <button id="loadMoreBtn" class="btn-load-more" onclick="loadMoreProfiles()">
+                    <i class="fas fa-plus"></i> Load More Profiles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Profile details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <h2><i class="fas fa-phone-alt"></i> Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Contact Person</h4>
+                            <p>Jignesh Makwana</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>8082422478</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sorthiyadamjisamaj.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://i.postimg.cc/KYNG6h2w/image.png" alt="SDS Logo" class="footer-logo">
+                    <h3>Sorthiya Damji Samaj</h3>
+                    <p>Connecting hearts, building families</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#profiles">Profiles</a>
+                        <a href="#add-profile">Add Profile</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Help & Support</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sorthiya Damji Samaj. All rights reserved. | Version 1.01</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="profiles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
