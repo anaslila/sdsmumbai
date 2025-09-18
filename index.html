@@ -1,1 +1,309 @@
-SDS Mumbai! Coming soon!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorthiya Damji Samaj - Matrimonial</title>
+    <link rel="icon" href="https://i.postimg.cc/90tVS1Mm/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://i.postimg.cc/90tVS1Mm/logo.jpg" alt="Sorthiya Damji Samaj Logo" class="logo">
+                <div class="brand-text">
+                    <h1>Sorthiya Damji Samaj</h1>
+                    <span>Matrimonial Services</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="profiles.html">Browse Profiles</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Find Your Perfect Life Partner</h2>
+                <p class="hero-subtitle">
+                    Welcome to Sorthiya Damji Samaj's trusted matrimonial platform. 
+                    Connect with verified profiles from our community and discover meaningful relationships.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalProfiles">150+</div>
+                        <div class="stat-label">Active Profiles</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Success Stories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Verified Profiles</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://tinyurl.com/SDS-MatrimonialForm" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Add Your Profile
+                    </a>
+                    <a href="profiles.html" class="btn btn-secondary">
+                        <i class="fas fa-search"></i>
+                        Browse Profiles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Search Section -->
+    <section class="quick-search">
+        <div class="container">
+            <h3>Quick Search</h3>
+            <div class="search-form">
+                <div class="search-row">
+                    <select class="search-input" id="searchGender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Groom</option>
+                        <option value="female">Bride</option>
+                    </select>
+                    <select class="search-input" id="searchAge">
+                        <option value="">Age Range</option>
+                        <option value="18-25">18-25 years</option>
+                        <option value="26-30">26-30 years</option>
+                        <option value="31-35">31-35 years</option>
+                        <option value="36-40">36-40 years</option>
+                        <option value="41+">41+ years</option>
+                    </select>
+                    <select class="search-input" id="searchEducation">
+                        <option value="">Education</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="postgraduate">Post Graduate</option>
+                        <option value="professional">Professional</option>
+                        <option value="diploma">Diploma</option>
+                    </select>
+                    <input type="text" class="search-input" id="searchLocation" placeholder="City/Location">
+                    <button class="btn btn-search" onclick="performQuickSearch()">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Profiles -->
+    <section class="featured-profiles">
+        <div class="container">
+            <h3>Featured Profiles</h3>
+            <div class="profiles-grid" id="featuredProfiles">
+                <!-- Featured profiles will be loaded here -->
+            </div>
+            <div class="view-all-btn">
+                <a href="profiles.html" class="btn btn-outline">View All Profiles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Features -->
+    <section class="features" id="about">
+        <div class="container">
+            <h3>Why Choose Our Platform?</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>100% Verified Profiles</h4>
+                    <p>All profiles are manually verified by our community administrators to ensure authenticity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Community-Centric</h4>
+                    <p>Exclusively for Sorthiya Damji Samaj community members, ensuring cultural compatibility.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Success Stories</h4>
+                    <p>Join hundreds of couples who found their life partners through our trusted platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>Privacy Protected</h4>
+                    <p>Your personal information is secure and shared only with your consent.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile Friendly</h4>
+                    <p>Access profiles and connect with potential matches from any device, anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Our community support team is available to assist you throughout your journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h3>Success Stories</h3>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="story-content">
+                        <h4>Ravi & Priya</h4>
+                        <p>"Thanks to Sorthiya Damji Samaj matrimonial platform, we found each other. The process was simple and the community support was excellent."</p>
+                        <div class="story-date">Married in 2024</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="story-content">
+                        <h4>Amit & Neha</h4>
+                        <p>"We appreciate the verified profiles and the cultural compatibility we found through this platform. Highly recommended!"</p>
+                        <div class="story-date">Married in 2024</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="story-content">
+                        <h4>Vikash & Pooja</h4>
+                        <p>"The detailed profiles and family information helped us make the right decision. Thank you for bringing us together!"</p>
+                        <div class="story-date">Married in 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3>Get in Touch</h3>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>matrimonial@sorthiyadamjisamaj.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Support Hours</h4>
+                            <p>Mon-Sat: 10AM-8PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="https://i.postimg.cc/90tVS1Mm/logo.jpg" alt="Logo" class="footer-logo">
+                        <h4>Sorthiya Damji Samaj</h4>
+                    </div>
+                    <p>Connecting hearts, building relationships, and strengthening our community bonds through trusted matrimonial services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profiles.html">Browse Profiles</a></li>
+                        <li><a href="https://tinyurl.com/SDS-MatrimonialForm">Add Profile</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#help">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sorthiya Damji Samaj Matrimonial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hello! I need help with matrimonial services" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
