@@ -13,52 +13,52 @@ const profilesData = [
         age: '32',
         height: '5\'4"',
         weight: '54 kg',
-        maritalStatus: 'Married',
-        religion: 'Hindu',
-        caste: 'Sorthiya Damji',
-        motherTongue: 'Gujarati',
-        nationality: 'Indian',
+        maritalStatus: '',
+        religion: '',
+        caste: '',
+        motherTongue: '',
+        nationality: '',
         
         // Education & Career
-        education: 'B.Sc. IT, MCA',
-        college: 'Veer Narmad South Gujarat University',
-        occupation: 'Software Tester',
-        jobTitle: 'Senior QA Engineer',
-        company: 'Wipro Technologies',
-        annualIncome: '₹9,60,000',
+        education: '',
+        college: '',
+        occupation: '',
+        jobTitle: '',
+        company: '',
+        annualIncome: '',
         
         // Family Details
-        fatherName: 'Vallabhbhai Damji Raval',
-        fatherOccupation: 'Diamond Business',
-        motherName: 'Kokilaben Vallabh Raval',
-        motherOccupation: 'Homemaker',
-        siblings: '2 Brothers (Both Married)',
-        familyStatus: 'Upper Middle Class',
-        familyLocation: 'Surat, Gujarat',
+        fatherName: '',
+        fatherOccupation: '',
+        motherName: '',
+        motherOccupation: '',
+        siblings: '',
+        familyStatus: '',
+        familyLocation: '',
         
         // Lifestyle & Hobbies
-        diet: 'Vegetarian',
-        drinking: 'Never',
-        smoking: 'Never',
-        hobbies: 'Technology, Cooking, Traveling, Bollywood Movies, Shopping',
-        fitness: 'Aerobics and Walking',
+        diet: '',
+        drinking: '',
+        smoking: '',
+        hobbies: '',
+        fitness: '',
         
         // Contact Details
-        mobile: '9876543221',
-        email: 'pooja.raval@email.com',
-        currentAddress: 'Adajan, Surat, Gujarat',
-        permanentAddress: 'Surat, Gujarat',
+        mobile: '',
+        email: '',
+        currentAddress: '',
+        permanentAddress: '',
         
         // Partner Preferences
-        preferredAgeRange: '27-31',
-        preferredHeight: '5\'6" - 5\'11"',
-        preferredReligion: 'Hindu',
-        preferredEducation: 'B.E./B.Tech in IT or related field',
-        preferredLocation: 'Surat, Ahmedabad, Mumbai, Pune',
-        partnerExpectations: 'Looking for a tech-savvy, understanding partner who respects family values and enjoys exploring new places.',
+        preferredAgeRange: '',
+        preferredHeight: '',
+        preferredReligion: '',
+        preferredEducation: '',
+        preferredLocation: '',
+        partnerExpectations: '',
         
         // Location for filtering
-        location: 'Surat, Gujarat'
+        location: 'Mumbai'
     }
 ];
 
