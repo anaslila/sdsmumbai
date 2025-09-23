@@ -59,7 +59,63 @@ const profilesData = [
         
         // Location for filtering
         location: 'Mumbai'
-    }
+    },
+        {
+        id: 2,
+        profileImage: 'https://static.vecteezy.com/system/resources/thumbnails/009/248/334/small_2x/test-outline-icon-free-vector.jpg',
+        fullName: 'TEST2',
+        gender: 'MALE',
+        dateOfBirth: 'NIL',
+        age: 'NIL',
+        height: '5\'0"',
+        weight: '00kg',
+        maritalStatus: 'NIL',
+        religion: 'NIL',
+        caste: 'NIL',
+        motherTongue: 'NIL',
+        nationality: 'NIL',
+        
+        // Education & Career
+        education: '',
+        college: '',
+        occupation: '',
+        jobTitle: '',
+        company: '',
+        annualIncome: '',
+        
+        // Family Details
+        fatherName: '',
+        fatherOccupation: '',
+        motherName: '',
+        motherOccupation: '',
+        siblings: '',
+        familyStatus: '',
+        familyLocation: '',
+        
+        // Lifestyle & Hobbies
+        diet: '',
+        drinking: '',
+        smoking: '',
+        hobbies: '',
+        fitness: '',
+        
+        // Contact Details
+        mobile: '',
+        email: '',
+        currentAddress: '',
+        permanentAddress: '',
+        
+        // Partner Preferences
+        preferredAgeRange: '',
+        preferredHeight: '',
+        preferredReligion: '',
+        preferredEducation: '',
+        preferredLocation: '',
+        partnerExpectations: '',
+        
+        // Location for filtering
+        location: 'Mumbai'
+    },
 ];
 
 // ===== ADMIN FUNCTIONS FOR PROFILE MANAGEMENT =====
